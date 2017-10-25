@@ -4,3 +4,6 @@
 <p>Import sql dump slinks.sql</p>
 
 <p>Change cfg.php & cfg_cms.php</p>
+
+<p>Test user:           user@mail.com:pass</p>
+<p>Test Admin in /cp/:  admin:pass</p>
