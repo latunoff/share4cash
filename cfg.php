@@ -6,8 +6,8 @@ define('SITE_TPL','default');
 define('SITE_LANG','ru');
 define('SALT', 'fwa4545646us345u46i4u54syS$%Y54ey45y');
 
-define('EMAIL_SITE', 'noreply@s4c.co');
-define('DOMAIN', 's4c.co');
+define('EMAIL_SITE', 'noreply@domain.ru');
+define('DOMAIN', 'domain.ru');
 define('SITE_NAME', 'Share 4 Cash');
 define('TIMEZONE','Europe/Moscow');
 

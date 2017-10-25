@@ -3,3 +3,5 @@ bin/
 bin-debug/
 bin-release/
 tmp/
+#cfg.php
+#cfg_cms.php

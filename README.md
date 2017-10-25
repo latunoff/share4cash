@@ -3,3 +3,4 @@
 <p>Clone it to xaamp or denwer host dir</p>
 <p>Import sql dump slinks.sql</p>
 
+<p>Change cfg.php & cfg_cms.php</p>
