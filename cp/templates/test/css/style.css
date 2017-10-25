@@ -1,0 +1,74 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+main{text-align: center;}
+#manage{width: 300px; float: left;}
+section{padding: 100px;}
+section form input{border-radius: 10px;}
+section form input.url{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 30px;
+    box-shadow: #aaa  0 0 10px;
+}
+section form input.button{
+    box-shadow: #aaa  0 0 5px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+}
+#loader{
+    position: absolute;
+    left: calc(50% - 33px);
+    top: 130px;
+    display: none;
+}
+#link_new{
+    margin: 20px;
+    font-size:2em;
+}
+div.auth{float: left;}
+form.auth{
+    display: none;
+    position: absolute;
+}
+form.auth input{margin: 5px; border-radius: 5px; box-shadow: #aaa  0 0 3px;}
+.authopen{text-decoration: none; border-bottom: #999 1px dotted;}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    padding: 7px;
+    background: linear-gradient(0deg, #eee  10%, #fff 100%);
+    background:-webkit-gradient(0deg, #eee  10%, #fff 100%);
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+div.st{
+    display: table;
+    width: 80%;
+}
+div.st_h, div.st_b{
+    display: table-row;
+}
+div.st_h{
+    background: linear-gradient(0deg, #e5e5e5  10%, #fafafa 100%); background:-webkit-gradient(0deg, #e5e5e5  10%, #fafafa 100%);
+}
+div.st_b div:first-child{
+    width: 20px;
+}
+div.st_h div, div.st_b div{
+    display: table-cell;
+    text-align: left;
+    padding: 10px;
+    box-shadow: #ccc 0 0 3px;
+}
+.calendar{
+    box-shadow: #ccc 0 0 3px;
+}

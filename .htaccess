@@ -1,0 +1,22 @@
+AddDefaultCharset UTF-8
+#php_flag register_globals off
+#php_value register_globals Off
+Options -Indexes
+ErrorDocument 404 /pages/404.html
+ErrorDocument 403 /pages/403.html
+
+DirectoryIndex index.html index.php
+
+Options +FollowSymlinks
+RemoveHandler .html .htm
+AddType application/x-httpd-php .htm .html .phtml
+AddHandler application/x-httpd-php .html
+
+RewriteEngine On
+RewriteRule ^.htaccess$ - [F]
+RewriteBase /
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{THE_REQUEST} !/cp
+RewriteRule ^(.+)$ index.php?params=$1 [L]
