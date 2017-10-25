@@ -70,7 +70,7 @@ if($u_id > 0){
                 '&date_1='.date('Y-m-d', strtotime("-365 day")).'&date_2='.DB_DT.''=>'Last year',
                 ),
                 'value'=>$date_link,
-                'zero_text'=>'no',
+                'zero_text'=>'ALL',
                 'goto'=>1 ) );
 
     $menu_nav['text']['calendar'] = $calendar_table;
@@ -83,7 +83,7 @@ if($u_id > 0){
     $day_str = " WHERE `dtm`>='$date_1 00:00:00' AND `dtm`<='$date_2 23:59:59'";
     //echo $day_str;
     
-    //if( !isset($_GET['day']) ) $day_str = '';
+    if( !isset($_GET['date_1']) || $_GET['period'] == 0 ) $day_str = '';
     
     if(MENU == 'clicks')    {
         $f = new TForm(array( 'db'=>PREF."slinks_stat", 'order'=>'dtm DESC',

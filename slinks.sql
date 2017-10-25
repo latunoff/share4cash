@@ -347,7 +347,7 @@ CREATE TABLE `ac_slinks_payments` (
   `user_id` int(12) NOT NULL,
   `sum` int(11) NOT NULL,
   `paid` int(1) NOT NULL,
-  `dtm` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `dtm` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -376,7 +376,7 @@ CREATE TABLE `ac_slinks_stat` (
   `ref` varchar(255) NOT NULL,
   `useragent` varchar(255) NOT NULL,
   `country` varchar(2) NOT NULL,
-  `dtm` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dtm` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `sid` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
